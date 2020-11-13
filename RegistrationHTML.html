@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="RegistrationCSS.css">
+  <script src="RegistrationJS.js"></script>
+  <title>Create an account</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Name*</label>
+          <input type="text" class="input" id="name" required>
+       </div>
+	   <div class="inputfield">
+          <label>Phone Number*</label>
+          <input type="text" class="input" id="pno" required>
+       </div> 
+        <div class="inputfield" input="gender" required>
+          <label>Gender*</label>
+          <div class="custom_select">
+            <select id="gender">
+              <option value=0>Select</option>
+              <option value=1>Male</option>
+              <option value=2>Female</option>
+            </select>
+          </div>
+       </div>
+		<div class="inputfield">
+          <label>Email Address*</label>
+          <input type="text" class="input" id="email" required>
+       </div> 
+       <div class="inputfield">
+          <label>Password*</label>
+          <input type="password" class="input" id="password" required>
+       </div>  
+      <div class="inputfield">
+          <label>Confirm Password*</label>
+          <input type="password" class="input" required>
+       </div> 
+      <div class="inputfield terms" required>
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn" onclick="validateform()">
+      </div>
+    </div>
+</div>
+</body>
+
+</html>
